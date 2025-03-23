@@ -1,0 +1,23 @@
+mport java.util.Scanner;
+
+public class Wk2Ex1 {
+    
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("interest Calculator Program");
+        System.out.println("What is principal amount of the loan in dollar?");
+        double principal = scanner.nextDouble(300000);//principal amount
+
+        System.out.println("What is interest rate(input 0.05 for 5%?");
+        double rate = scanner.nextDouble(0.05);//rate amount
+
+        System.out.println("What is period of loan in years");
+        double time = scanner.nextInt(30);//year amount
+
+        //total
+        double totalInterest = principal * rate * time;
+
+        System.out.println("Total interest of Loan:" + TotalInterest +"dollars.");
+    }
+}
